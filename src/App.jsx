@@ -3,7 +3,9 @@ import Contador from "./components/Contador.jsx";
 import MyButtonCounter from "./components/MyButtonCounter.jsx";
 import MyButtonError from "./components/MyButtonError.jsx"
 import ErrorBoundary from './components/ErrorBoundary.jsx';
-
+import Agenda from "./components/Agenda/Agenda.jsx";
+import Formulario from "./components/formulario/Formulario.jsx";
+import FormularioFuncional from './components/formulario/FormularioFuncional.jsx'
 
 function App() {
   const MyCounter01 = Contador(MyButtonCounter);
@@ -19,6 +21,9 @@ function App() {
         <h2>Manejo de errores</h2>
         <MyButtonError></MyButtonError>
       </ErrorBoundary>
+      <h2>portals</h2>
+      <Agenda />
+      <FormularioFuncional></FormularioFuncional>
     </>
   );
 }
